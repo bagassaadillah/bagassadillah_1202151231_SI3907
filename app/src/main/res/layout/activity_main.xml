@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bagas.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/text_judul"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:text="MAKAN MALAM"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <TextView
+        android:id="@+id/text_Milea"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_judul"
+        android:layout_alignStart="@+id/text_judul"
+        android:layout_alignTop="@+id/text_judul"
+        android:text="DENGAN MILEA"
+        android:textAlignment="center"
+        android:textSize="7pt"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="84dp" />
+
+    <EditText
+        android:id="@+id/menu_makanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_Milea"
+        android:layout_margin="20dp"
+        android:hint="Menu Makanan"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <EditText
+        android:id="@+id/porsi_makanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_makanan"
+        android:layout_margin="20dp"
+        android:hint="Porsi Makanan"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <Button
+        android:id="@+id/button_eatbus"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/porsi_makanan"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:onClick="launchEatbus"
+        android:text="EATBUS"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <Button
+        android:id="@+id/button_abnormal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_eatbus"
+        android:layout_alignBottom="@+id/button_eatbus"
+        android:layout_alignEnd="@id/porsi_makanan"
+        android:layout_alignRight="@+id/porsi_makanan"
+        android:background="@color/colorPrimary"
+        android:onClick="launchAbnormal"
+        android:text="ABNORMAL"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+</RelativeLayout>
+
+
